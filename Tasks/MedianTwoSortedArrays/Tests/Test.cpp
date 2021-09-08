@@ -65,7 +65,12 @@ TEST(MedianTwoSortedArrays, MedianBetweenArrays)
     EXPECT_FLOAT_EQ(GetMedianTwoSortedArray({1, 5}, {6, 7}), 5.5f);
 }
 
-TEST(MedianTwoSortedArrays, EscapeOneArray)
+TEST(MedianTwoSortedArrays, EscapeFirstArray)
 {
     EXPECT_FLOAT_EQ(GetMedianTwoSortedArray({8, 90, 100}, {6, 7}), 8.0f);
+}
+
+TEST(MedianTwoSortedArrays, EscapeSecondArray)
+{
+    EXPECT_FLOAT_EQ(GetMedianTwoSortedArray({-90, -89}, {90, 93, 97}), 90.0f);
 }

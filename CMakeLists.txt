@@ -15,6 +15,7 @@ project(BrainOutTasks VERSION 1.0)
 enable_testing()
 
 add_subdirectory(Tasks/MedianTwoSortedArrays)
+add_subdirectory(Tasks/SortVectorOfLists)
 
 add_executable(BrainOutTasks main.cpp)
 target_compile_features(BrainOutTasks PRIVATE cxx_std_17)
@@ -25,4 +26,5 @@ target_compile_options(BrainOutTasks PRIVATE
 
 target_link_libraries(BrainOutTasks PRIVATE
   MedianTwoSortedArraysLib
+  SortVectorOfListsLib
 )
