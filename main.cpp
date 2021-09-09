@@ -1,7 +1,6 @@
-#include <MedianTwoSortedArrays/MedianTwoSortedArrays.h>
-
 #include <exception>
 #include <iostream>
+#include <vector>
 
 
 int main(int /*argc*/, char** /*argv*/)
@@ -9,7 +8,6 @@ int main(int /*argc*/, char** /*argv*/)
     try
     {
 
-        std::cout << GetMedianTwoSortedArray({-1, 5}, {1, 8, 20});
     }
     catch(const std::exception& exc)
     {
